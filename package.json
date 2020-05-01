@@ -1,34 +1,38 @@
 {
-	"name": "jasmine-signals",
-	"description": "Jasmine extension that simplifies writing specs for components using js-signals",
-	"version": "0.1.0-1",
-	"homepage": "https://github.com/AdamNowotny/jasmine-signals",
-	"author": {
-		"name": "Adam Nowotny",
-		"url": "http://github.com/AdamNowotny"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/AdamNowotny/jasmine-signals.git"
-	},
-	"bugs": {
-		"url": "https://github.com/AdamNowotny/jasmine-signals/issues"
-	},
-	"licenses": [
-		{
-			"type": "Apache",
-			"url": "https://github.com/AdamNowotny/jasmine-signals/blob/master/LICENSE"
-		}
-	],
-	"engines": {
-		"node": ">= 0.8.0"
-	},
-	"scripts": {
-		"test": "bower update; grunt --verbose"
-	},
-	"dependencies": {
-		"bower": "0.3.1",
-		"grunt": "~0.3.x",
-		"grunt-jasmine-runner": "~0.6.0"
-	}
+  "name": "jasmine-signals",
+  "description": "Jasmine extension that simplifies writing specs for components using js-signals",
+  "version": "0.1.0-1",
+  "homepage": "https://github.com/AdamNowotny/jasmine-signals",
+  "author": {
+    "name": "Adam Nowotny",
+    "url": "http://github.com/AdamNowotny"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AdamNowotny/jasmine-signals.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AdamNowotny/jasmine-signals/issues"
+  },
+  "licenses": [
+    {
+      "type": "Apache",
+      "url": "https://github.com/AdamNowotny/jasmine-signals/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "bower update; grunt --verbose",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "dependencies": {
+    "bower": "0.3.1",
+    "grunt": "~0.3.x",
+    "grunt-jasmine-runner": "~0.6.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
